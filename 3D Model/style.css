@@ -172,7 +172,7 @@ footer a {
     color: #fff;
 }
 
-@media (max-width:413px) {
+@media (max-width:450px) {
 
     body {height: 120vh;}
 
