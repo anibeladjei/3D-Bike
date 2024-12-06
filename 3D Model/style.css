@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: opx;
+    margin: 0px;
+}
+
+body {
+    /* color: #fff;
+    /* height: 120vh; */
+    /* height: 1250px; */
+    /* background-repeat: no-repeat; */
+    /* background: linear-gradient(180deg, rgba(34,34,36,1) 0%, rgba(53,53,56,1) 45%, rgba(110,113,115,1) 100%); */ */
+
+}
+
+section {
+    color: #fff;
+    height: 120vh;
+    /* height: 1250px; */
+    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(34,34,36,1) 0%, rgba(53,53,56,1) 45%, rgba(110,113,115,1) 100%);
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 100px;
+    border-bottom: 0.010px solid #373737;
+}
+
+nav {
+    display: flex;
+    gap: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: aqua;
+    transition: 1s;
+}
+
+header button {
+    padding: 10px 22px;
+    transition: 1s;
+}
+
+header button:hover{
+    background-color: rgb(141, 209, 209);
+    color: #fff;
+    transition: 1s;
+}
+
+header h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+}
+
+.desc h2 {
+    writing-mode: vertical-lr;
+    width: 100%;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    rotate: -180deg;
+}
+
+.desc hr {
+    width: 70px;
+    height: 5px;
+    background-color: aqua;
+    rotate: 90deg;
+}
+
+.child {
+    width: 10%;
+    /* background-color: rgba(38, 40, 39, 0.563); */
+    backdrop-filter: blur(8px);
+    /* writing-mode: vertical-lr; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.main {
+    width: 70%;
+    padding-top: 30px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.model {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-top: 0px;
+}
+.d3 {
+    height: 150%;
+    width: 100%;
+}
+
+.mdesc {
+    display: none;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rate {
+    transition: 2s;
+    align-content: center;
+    justify-items: center;
+    min-width: 150px;
+    min-height: 150px;
+    /* background-color: #383434; */
+    border-radius: 10px;
+    backdrop-filter: blur(18px);
+    box-shadow: 0px 4px 10px rgba(132, 243, 243, 0.108);
+}
+.rate:hover {
+    translate: -20px;
+    transition: 1s;
+}
+
+.rate img {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #383434;
+    height: 50px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width:413px) {
+
+    body {height: 120vh;}
+
+    header {
+        padding: 40px 40px;
+    }
+
+    nav {
+        display: none;
+    }
+    .container {
+        display: block;
+        flex-wrap: wrap;
+        height: 80vh;
+    }
+
+    .desc h2 {
+        rotate: 0deg;
+        font-size: 30px;
+        writing-mode: horizontal-tb;
+    }
+
+    .child {
+        width: 100%;
+        writing-mode: horizontal-tb;
+        height: 100px;
+        
+    }
+    .main {
+        width: 100%;
+        padding-top: 30px;
+        height: 60vh;
+    }
+    .mdesc {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rating {
+        padding: 0px 10px;
+        margin-bottom: 30px;
+    }
+    .rate {
+        min-width: 80px;
+        min-height: 80px;
+        padding: 10px;
+        background-color: #383434;
+
+    }
+
+    .rate img {
+        width: 30px;
+    }
+
+    .rate h1 {
+        font-size: 20px;
+    }
+
+    .rate p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+}
