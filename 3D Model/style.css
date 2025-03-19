@@ -45,7 +45,7 @@ nav a {
 }
 
 nav a:hover {
-    color: aqua;
+    color: rgb(0, 195, 255);
     transition: 1s;
 }
 
@@ -62,7 +62,7 @@ header button:hover{
 
 header h2 {
     font-family: "Ubuntu", sans-serif;
-    font-weight: 700;
+    font-weight: 750;
     font-size: 40px;
 }
 
